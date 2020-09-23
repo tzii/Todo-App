@@ -1,0 +1,54 @@
+.todo {
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+}
+.todo label {
+    position: relative;
+}
+.todo .todo-task {
+    flex: 1;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+.todo.completed .todo-task {
+    color: var(--black-1);
+    text-decoration: line-through;
+}
+.todo input {
+    display: none;
+}
+.todo .checkbox {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--gray-2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.todo .tick {
+    position: absolute;
+    top: 2px;
+    left: 7.7px;
+    width: 15px;
+    height: 9px;
+    border: 0 solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotateZ(-45deg);
+    transform-origin: 0% 100%;
+    cursor: pointer;
+}
+.todo input:checked + .checkbox {
+    background-color: var(--blue-1);
+    transition: 0.2s;
+}
+.todo input:checked ~ .tick {
+    transition: 0.2s;
+    border-color: var(--white-1);
+}

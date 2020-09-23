@@ -1,0 +1,12 @@
+footer {
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 25px auto;
+    color: #a9a9a9;
+}
+footer a {
+    color: #a9a9a9;
+}
