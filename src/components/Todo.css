@@ -4,6 +4,10 @@
     align-items: center;
     justify-content: space-between;
     min-height: 50px;
+    border-radius: 5px;
+}
+.todo:hover {
+    background-color: #e1dddd;
 }
 .todo label {
     position: relative;
@@ -24,7 +28,7 @@
 }
 .todo .checkbox {
     position: absolute;
-    top: -6px;
+    top: -9px;
     left: 0;
     width: 20px;
     height: 20px;
@@ -34,7 +38,7 @@
 }
 .todo .tick {
     position: absolute;
-    top: 2px;
+    top: -1px;
     left: 7.7px;
     width: 15px;
     height: 9px;
